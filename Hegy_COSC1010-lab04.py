@@ -109,9 +109,9 @@ print(f'The average minimum temperature is:{ave_min} degrees.')
 print(f'The average maximum temperature is:{ave_max} degrees.')
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
-lowest_temp = min (min_temps)
-highest_temp = max (max_temps)
-print(f'The lowest recorded temp was {lowest_temp} degrees.')
-print(f'The lowest recorded temp was {highest_temp} degrees.')
+lowest_temp = sorted (min_temps)
+highest_temp = sorted (max_temps)
+print(f'The lowest recorded temp was {lowest_temp[0]} degrees.')
+print(f'The highest recorded temp was {highest_temp[-1]} degrees.')
 
 
